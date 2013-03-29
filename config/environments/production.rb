@@ -64,4 +64,14 @@ Omrails::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Paperclip should use Amazon S3 on Heroku
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "onemonthrailz",
+      :access_key_id => "AKIAIOQVZVRDP42L7KCA",
+      :secret_access_key => "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"
+    }
+  }
 end
