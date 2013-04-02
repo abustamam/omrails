@@ -1,5 +1,8 @@
 <%= render 'pages/home' %>
 
+<% javascript :defaults, 'endless_page' %>
+
 <div id="pins">
   <%= render @pins %>
 </div>
+<p id="loading">Loading more page results...</p>

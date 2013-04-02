@@ -1,0 +1,6 @@
+ page.insert_html :bottom, :pins, :partial => @pins
+if @pins.total_pages > @pins.current_page
+  page.call 'checkScroll'
+else
+  page[:loading].hide
+end 
