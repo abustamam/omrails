@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.masonry.min.js
-//= require endless_page.js
 //= require bootstrap
 //= require_tree .
