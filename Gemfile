@@ -35,7 +35,8 @@ gem 'paperclip', '~> 3.0'
 gem 'aws-sdk'
 gem 'populator'
 gem 'faker'
-gem 'will_paginate', '~> 3.0.0'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
