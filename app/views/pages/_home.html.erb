@@ -1,13 +1,16 @@
+<% @title ="Your Inspirational Network" %>
 <% unless user_signed_in? %>
 	<div class="hero-unit">
-    <h1>Welcome to Inspire Network! </h1>
+    <center><h1>Welcome to</h1>
+    <br>
+    <img src="/images/YIN_logo.png">
+    <br>
     <p>
-    	You've found the home page for the 
-    	<%= link_to 'Inspire Network',  "http://www.blog2success.net" %>
-    	application.
-     </p>
-	   <p> 
-    	<%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %> 
+        Inspirational photos. Without all the fluff.
     </p>
+	<p> 
+        <%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %> 
+    </p>
+    </center>
 	</div>
 <% end %>

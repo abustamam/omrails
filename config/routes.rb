@@ -12,6 +12,9 @@ Omrails::Application.routes.draw do
   root :to => 'pins#index'
   get 'about' => 'pages#about'
 
+  match '/terms' => 'pages#terms'
+  match '/privacy' => 'pages#privacy'
+
 end
 
   # The priority is based upon order of creation:
